@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Lana</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="text-center">
+        <a href="index.html"><span class="navigation">HOME</span></a>
+        <a href="blog.html"><span class="navigation">BLOG</span></a>
+        <a href="about.html"><span class="navigation">ABOUT</span></a>
+      </p>
+      <div class="container_who">
+        <p>Lana about travel, lifestyle and web design</p>
+      </div>
+      <div class="h2">HOME</div>
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Post title</h1>
+          <p>
+            <span class="smaller">dd/mm/yyyy</span>
+          </p>
+          <p>
+            <img src="img/pic.png" class="img-responsive" alt="Responsive image" alt="Лана"/>
+          </p>
+          <div class="h2">Post title 2</div>
+          <p>Большое спасибо за внимательное прочтение статьи и ваш комментарий. Он будет очень полезен новичкам. Действительно, использовать идентификаторы в css — не самая лучшая идея, особенно когда идет речь о сложных проектах.
+          В данном случае я их использовал по двум причинам.
+          Первая — это конечно же потому, что описывал процесс верстки одной конкретной страницы, а не сайта, что отражено в заголовке.
+          А второе — это вопрос удобства чтения CSS. Если в коде я встречаю правило .heading {...}, то я не могу быть точно уверен к какой части страницы оно применится. Может быть это заголовок одного блока или другого. При верстке данной страницы я использовал идентификаторы только для глобальных или уникальных блоков. Поэтому, читая правило #heading {...}, я понимаю, что речь идет о самом главном заголовке на странице и он всегда один.
+          Во всём остальном — вы абсолютно правы.
+          За рекомендацию использовать БЭМ — отдельное спасибо. Вот ссылка на неё для всех остальных.
+          </p>
+          <p>
+            <a href="/post1"><span class="tag">READ MORE</span></a>
+          </p>
+          <p>
+            <img src="img/heart.png"/>15
+            <img src="img/comments.png"/>4
+            <a href="/sorttag1">Sort tag 1</a>
+            <a href="/sorttag2">Sort tag 2</a>
+          </p>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+          <div class="container_bio">
+            <center>
+              <img src="img/Oval 1.png" class="img-responsive" alt="Responsive image">
+            </center>
+          <p class="text-center">
+            Portrait fashion wedding travel lifestyle.</br>
+            Based in Moscow
+          </p>
+          <p class="text-center">
+            <a href="/tag1"><span class="tag">TAG</a></span></br>
+            <a href="/tag2"><span class="tag">TAG</a></span></br>
+            <a href="/tag3"><span class="tag">TAG</a></span></br>
+            <a href="/tag4"><span class="tag">TAG</a></span></br>
+            <a href="/tag5"><span class="tag">TAG</a></span></br>
+          </p>
+          <div class="h2">INSTAGRAM</div>
+          <div id="instafeed"></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var feed = new Instafeed({
+          get: 'user',
+          userId: '5860547',
+          access_token: '5860547.2c0e7ef.2564eaa5cbeb4409bbbb5332f2420ca8',
+          clientId: '2c0e7ef0f4354677b230f5bf4a685583'
+      });
+      feed.run();
+    </script>
+  </body>
+</html>

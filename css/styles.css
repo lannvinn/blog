@@ -1,0 +1,92 @@
+/*текст поста*/
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2em;
+  color: #747474;
+}
+/*заголовок поста*/
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  color: #747474;
+  text-transform: uppercase;
+}
+/*заголовок с линией*/
+.h2 {
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  font-weight: 100;
+  color: #747474;
+  text-transform: uppercase;
+}
+.h2:before,
+.h2:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1px;
+  background: #CFCFCF;
+  position: relative;
+}
+.h2:before {
+    margin-left: -100%;
+    left: -14px;
+}
+.h2:after {
+    margin-right: -100%;
+    right: -14px;
+}
+/*заголовок без линии*/
+.bigger {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  color: #747474;
+  text-transform: uppercase;
+}
+/*даты и примечания*/
+.smaller {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7em;
+  color: #747474;
+}
+/*верхняя навигация*/
+.navigation{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  color: #CFCFCF;
+  padding: 0.4em;
+}
+/*навигация по тэгам*/
+.tag{
+  font-family: 'EB Garamond', serif;
+  font-size: 1em;
+  color: #747474;
+  text-transform: uppercase;
+}
+.container {
+  padding-top: 3em;
+}
+.container_who {
+  padding-bottom: 1em;
+  text-align: center;
+}
+.container_bio {
+  padding-top: 6.5em;
+  align-items: center;
+  align-content: center;
+}
+.container_bio {
+  padding-top: 6.5em;
+  align-items: center;
+  align-content: center;
+}
+.container_about {
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
